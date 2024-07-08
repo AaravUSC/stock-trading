@@ -1,0 +1,46 @@
+<html lang="en">
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="scripts/login.js"></script>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>JoeStocks</title>
+		<link rel="stylesheet" href="styles/styles.css">
+	</head>
+	<body>
+		<header>
+			<div class="navbar"><span class="logo">JoeStocks</span>
+				<nav>
+					<a href="search.html">Home / Search</a>
+					<a id = "login" href="Login.html">Login / Sign Up</a>
+					
+				</nav>
+			</div>
+		</header>
+		<main>
+			<section class="form-box">
+				<div class="login">
+				<h2>Login</h2>
+					<form name="login">
+						<label for="username">Username:</label><input type="text" id="lusername" name="lusername">
+						<label for="password">Password:</label><input type="password" id="lpassword" name="">
+						<button type="submit" OnClick="loginUser()">Submit</button> 
+					</form>
+					<span id="lgnerr" style="color:red;"></span>
+				</div>
+				<div class="signup">
+					<h2>Sign Up</h2>
+					<form name="register">
+						<label for="email">Email:</label><input type="email" id="email" name="email">
+						<label for="new-username">Username:</label><input type="text" id="rusername" name="rusername">
+						<label for="new-password">Password:</label><input type="password" id="rpassword" name="rpassword">
+						<label for="confirm-password">Confirm Password:</label><input type="password" id="confirm" name="confirm">
+						<button type="submit" OnClick="registerUser()">Submit</button>
+					</form>
+					<span id="rgerr" style="color:red;"></span>
+				</div>
+			 </section>
+		
+		</main>
+	</body>
+</html>

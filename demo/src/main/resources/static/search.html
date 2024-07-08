@@ -1,0 +1,73 @@
+
+<html lang="en">
+    <head>
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="scripts/index.js"></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JoeStocks - Search Stocks</title>
+        <link rel="stylesheet" href="styles/stylessearch.css">
+        
+    </head>
+    <body>
+        <header>
+            <div class="navbar"><span class="logo">JoeStocks</span>
+				<nav>
+					<a href="search.html">Home / Search</a>
+					<a id = "login" href="Login.html"></a>
+					<a id="pnav" href="Portfolio.html"></a>
+					<a id = "logout" href="Login.html" onclick="logout()"></a>
+				</nav>
+			</div>
+        </header>
+        <main>
+        	<div class="search">
+	        	<h1>SEARCH STOCKS</h1>
+	            <div class="search-box">
+	                <input type="text" name="search" id="search" placeholder="Search by ticker...">
+	                <button OnClick="loadStockInfo()" style="color: rgb(255, 255, 255);">&#x1F50E;&#xFE0E;</button>
+	            </div>
+        	</div>
+        	
+       		<div class="buy" style="display:none; margin-left:50px; position:absolute; top:50px; left:50px; text-align:left;">
+                <p class="ticker" style="font-size:16pt; padding-bottom:0px; margin-bottom:0px;"><strong>COIN</strong><p>
+                <p class="name">Coinbase Global Inc</p>
+                <p class="exchange" style="padding-bottom:0px; margin-bottom:0px;">NASDAQ NMS - GLOBAL MARKET</p>
+                <p class="buyinp">
+                    <label for="quantity">Quantity:</label>
+                    <input class="qtyinp" type="number" id="quantity" style="width:30px;margin-bottom:0px;">
+                </p>
+                <button class="buy-btn" OnClick="makeTrade()" style="background-color:green;color:white;padding-top:10px;padding-bottom:10px;padding-left: 10px;padding-right:10px;border-radius: 5px;border-width:0px;margin-top:0px;margin-top: 10px;">Buy</button>
+            </div>
+            <div class="price-info" style="display:none; margin-top: 10px;padding-left: 400px;justify-content: end;text-align:right;margin-right:100px; position:absolute; top:50px; right:50px;">
+                <span class="price" style="font-size:22pt; margin-top:40px; color:green;">193.94</span>
+                <span class="change" style="font-size:22pt; color:green;">+27.96 (16.85%)</span>
+                <span class="curr_ts" style="color:green;">02-26-2024 10:00:00</span>
+            </div>
+            <div class="mktopen" style="display:none;text-align:center;width:100%;">Market is Open</div>
+            
+            <div class="market-details" style="display:none; background: #ffffff;   text-align:center;border-radius: 5px;width: 100%;position: absolute; left: 0px;right: 0px;top: 320px;">
+                <h3>Summary</h3>
+                <hr style="margin-left:50px;margin-right:50px;"/>
+                <p class="high"><strong>High Price: 196.95</strong></p>
+                <p class="low"><strong>Low Price: 168.4</strong></p>
+                <p class="open"><strong>Open Price: 168.66</strong></p>
+                <p class="close"><strong>Close Price: 193.94</strong></p>
+                <hr style="margin-left:50px;margin-right:50px;"/>
+            </div>
+            
+            <div class="company-info" style="display:none; background: #ffffff;text-align:left;position: absolute;left: 0px;right: 0px;top: 540px;">
+                <h3 style="text-align:center; margin-left:0px;">Company Information</h3>
+            
+                <p class="ipo">IPO Date: 2021-04-14</p>
+                <p class="mcap">Market Cap (SM): 46986.84776841982</p>
+                <p class="so">Share Outstanding: 239.25</p>
+                <p class="web">Website: <a href="https://www.coinbase.com/">https://www.coinbase.com/</a></p>
+                <p class="phone">Phone: 13026365401</p>
+            </div>
+            
+            
+         
+        </main>
+    </body>
+</html>

@@ -1,0 +1,151 @@
+body, h1, div, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    background-color: #ffffff;
+}
+header {
+    background-color: #5c67f2;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-align: center;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar .logo {
+    font-size: 24px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+main {
+    text-align: center;
+    padding-top: 250px;
+}
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+.search-box {
+    display: inline-block;
+    position: relative;
+    padding-top:30px;
+}
+.search-box input {
+    font-size: 16px;
+    padding-top: 6px;
+    padding-left: 10px;
+    padding-right: 20px;
+    padding-bottom: 6px;
+    border: 1px solid #5c67f2;
+    border-width:3px;
+    border-radius: 0px;
+    width: 300px;
+}
+.search-box button {
+    padding: 8px 10px;
+    background: #5c67f2;
+    border: 0px solid #ccc;
+    border-left: none;
+    cursor: pointer;
+    border-radius: 0px 5px 5px 0px;
+}
+.search-box button:hover {
+    background-color: blue;
+    color: white;
+}
+.buy-btn{
+    background-color:green;
+    color:white;
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left: 10px;
+    padding-right:10px;
+    border-radius: 5px;
+    border-width:0px;
+    margin-top:0px;
+    margin-top: 10px;
+    
+}
+.qtyinp:focus{
+    outline: 1px solid blue; 
+  }
+.qtyinp{
+    width:30px;
+    margin-bottom:0px;
+}
+hr{
+    margin-left:50px;
+    margin-right:50px;
+}
+
+.stock-info{
+    background: #ffffff;
+    padding: 20px;
+    padding-left: 200px;
+    border-radius: 5px;
+    display: block;
+    
+}
+.buy{
+    margin-left:50px;
+}
+.market-details{
+    background: #ffffff;   
+    text-align:center;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    position: absolute; 
+    left: 0px;
+    right: 0px;
+    top: 300px;
+}
+
+.company-info {
+    background: #ffffff;
+    text-align:left;
+    padding: 10px;
+    display: block;
+    position: absolute;
+    margin-left:50px;
+    
+    left: 0px;
+    right: 0px;
+    top: 520px;
+}
+.price-info {
+    margin-top: 10px;
+    
+    padding-left: 400px;
+    justify-content: end;
+    text-align:right;
+    margin-right:100px;
+}
+.price-info span {
+    display: block;
+    margin-top: 5px;
+}
+.current-price {
+    font-size: 24px;
+    color:#008000;
+}
+.change {
+    color: #008000;
+}
+
+.company-info a {
+    color: #0000FF;
+}
