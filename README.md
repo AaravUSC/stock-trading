@@ -7,7 +7,7 @@ This repository is a Spring Boot web application for trading stocks in real time
 After cloning the repository, install the requirements:
 > $ mvn clean install
 
-On MySQL workbench, run the create.sql file provided in the repositoryl.
+On MySQL workbench, run the create.sql file provided in the repository.
 
 Obtain a free Finnhub API key [here](https://finnhub.io/register) for real-time stock quotes.
 
