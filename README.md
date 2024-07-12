@@ -15,9 +15,9 @@ Once the database is setup, go to the 'resources' directory in the repo and crea
 > $ cd src/main/resources/
 
 In the .env file, set the following variables:
-'''
+```
 SQLUSER = {Your MySQL username}
 SQLPASSWORD = {Your MySQL password}
 FINNHUBAPI = {Your Finnhub API key}
 JDBCURL = {Your MySQL host url}
-'''
+```
